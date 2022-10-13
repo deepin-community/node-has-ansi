@@ -1,0 +1,50 @@
+node-has-ansi (4.0.0-1) unstable; urgency=medium
+
+  * Team upload
+
+  [ Debian Janitor ]
+  * Trim trailing whitespace.
+  * Bump debhelper from old 9 to 12.
+  * Set debhelper-compat version in Build-Depends.
+  * Update Vcs-* headers from URL redirect.
+  * Use canonical URL in Vcs-Git.
+  * Remove obsolete field Name from debian/upstream/metadata (already
+    present in machine-readable debian/copyright).
+
+  [ Xavier Guimard ]
+  * Bump debhelper compatibility level to 13
+  * Declare compliance with policy 4.5.1
+  * Add "Rules-Requires-Root: no"
+  * Modernize debian/watch
+  * Use dh-sequence-nodejs auto install
+
+  [ Mathias Behrle ]
+  * Imported Upstream version 2.0.0
+
+  [ Xavier Guimard ]
+  * New upstream version 4.0.0
+  * Embed @types/has-ansi
+  * Update copyright
+  * Enable upstream test using tape instead of ava
+
+ -- Xavier Guimard <yadd@debian.org>  Wed, 09 Dec 2020 13:01:56 +0100
+
+node-has-ansi (2.0.0-1) unstable; urgency=low
+
+  [ Bas Couwenberg ]
+  * Initial release (Closes: #780879)
+  * Remove myself from Uploaders.
+
+  [ Mathias Behrle ]
+  * Imported Upstream version 2.0.0
+  * Updating debian packaging for new version.
+  * Removing XS-Testsuite, no more needed.
+  * Updating to Standards-Version 3.9.8, no changes needed.
+  * Adding myself to Uploaders.
+  * Running wrap-and-sort -sta.
+  * Adding myself to debian copyright.
+  * Correcting a typo in the long description.
+  * Pointing to secure VCS-URIs.
+  * (Re-)Uploading to unstable (Closes: #780879)
+
+ -- Mathias Behrle <mbehrle@debian.org>  Fri, 15 Jul 2016 20:30:58 +0200

@@ -1,0 +1,25 @@
+Source: node-has-ansi
+Section: javascript
+Priority: optional
+Maintainer: Debian Javascript Maintainers <pkg-javascript-devel@lists.alioth.debian.org>
+Uploaders: Mathias Behrle <mbehrle@debian.org>
+Build-Depends: debhelper-compat (= 13)
+ , dh-sequence-nodejs
+ , node-ansi-regex <!nocheck>
+ , node-tape <!nocheck>
+Standards-Version: 4.5.1
+Vcs-Browser: https://salsa.debian.org/js-team/node-has-ansi
+Vcs-Git: https://salsa.debian.org/js-team/node-has-ansi.git
+Homepage: https://github.com/sindresorhus/has-ansi
+Testsuite: autopkgtest-pkg-nodejs
+Rules-Requires-Root: no
+
+Package: node-has-ansi
+Architecture: all
+Depends: ${misc:Depends}
+ , node-ansi-regex
+Provides: ${nodejs:Provides}
+Description: Check if a string has ANSI escape codes in Node.js
+ has-ansi is a Node.js module to check if a string has ANSI escape codes.
+ .
+ Node.js is an event-based server-side JavaScript engine.
